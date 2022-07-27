@@ -10,7 +10,7 @@ const Inter = ('./lib/Intern');
 const Manager = ('./lib/Manager');
 
 
-const promptUser = () => {
+const promptQuestions = () => {
     return inquirer.prompt([
     //   {
     //     type: 'input',
@@ -34,7 +34,7 @@ const promptUser = () => {
     ]);
   };
 
-promptUser()
+promptQuestions()
 .then(promptProject)
 .then(portfolioData => {
   return generatePage(portfolioData);
