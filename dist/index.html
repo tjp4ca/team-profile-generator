@@ -1,5 +1,4 @@
-function pageTemplate(answers) {
-    return ` 
+ 
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -16,24 +15,20 @@ function pageTemplate(answers) {
 
         <div class="cards">
             <div class="cardName">
-                Manager: ${answers.name}
+                Manager: Gabe
             </div>
 
             <div class="cardInfo">
-                <p class="info1">ID: ${answers.id}</p>
+                <p class="info1">ID: 1</p>
                 
                 <p class="info2">Email: 
-                <a href="mailto:${answers.email}">${answers.email}</a>
+                <a href="mailto:gabe@gmail.com">gabe@gmail.com</a>
                 </p>
             
-                <p class="info3">Office #: ${answers.office}</p>                  
+                <p class="info3">Office #: 123</p>                  
             </div>
         </div>
     </body>
     </html>
   
-  `;
-  }
   
-module.exports = {pageTemplate};
-

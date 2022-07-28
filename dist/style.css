@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  header h1 {
+    background-color: rgb(246, 53, 53);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    font-size: 50px;
+  }
+
+  .cards {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    width: 250px;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .cardName {
+    margin-top: 35px;
+    background-color: rgb(48, 48, 245);
+    color: white;
+    font-size: 25px;
+    padding: 10px 0 10px 15px;
+    /* width: 250px; */
+  }
+
+  .cardInfo {
+    border: black 1px solid;
+    padding: 35px 15px;    
+  }
+
+  .info1 {
+    border: black 1px solid;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+  }
+
+  .info2 {
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+    padding: 5px;
+  }
+
+  .info3 {
+    border: black 1px solid;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+  }

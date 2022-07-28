@@ -5,8 +5,10 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 
 // template to generate index.html
-const generatePage = require('./src/page-template');
+// const generatePage = require('./src/page-template');
 // const { writeFile, copyFile } = require('./utils/generate-site');
+
+const {pageTemplate} = require('./src/page-template');
 
 // const Employee = ('./lib/Employee')
 // const Engineer = ('./lib/Engineer');
@@ -131,9 +133,9 @@ const questions = [
 function init() {
     return inquirer.prompt(questions)
     .then((answers) => {
-        const gen = generatePage.pageTemplate(answers);
+        const gen = pageTemplate(answers);
         console.log(gen)
-        fs.writeFile('index.html', gen, err =>
+        fs.writeFile('./dist/index.html', gen, err =>
         err ? console.log(err) : console.log('Success!'));
         // return answers
     })
@@ -149,7 +151,7 @@ init();
 
 
 
-// fs.writeFileSync("team-profile-generator.html", HTML, (err) => {
+// fs.writeFileSync("index.html", HTML, (err) => {
 //     if (err)
 // })
 
@@ -157,7 +159,7 @@ init();
 // // Create a function to write README file
 // function writeToFile(fileName, data) {
 //     console.log(data)
-//     fs.writeFile('team-profile-generator.html', data, err =>
+//     fs.writeFile('index.html', data, err =>
 //     err ? console.log(err) : console.log('Success!'));
 // }
 
